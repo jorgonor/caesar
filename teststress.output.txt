@@ -1,0 +1,10 @@
+NAIVE PYTHON
+
+real	0m17.557s
+user	0m17.505s
+sys	0m0.048s
+NAIVE PHP
+
+real	0m44.567s
+user	0m42.755s
+sys	0m1.780s
