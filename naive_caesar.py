@@ -14,10 +14,8 @@ N = sys.argv[1];
 if not N.isdigit() and (N[0:1] != '-' or not N[1:].isdigit()) :
     error_die("{} should be numeric".format(N))
 
+CHUNK_SIZE = 1024
 N = int(N)
-
-input = sys.stdin.read()
-length = len(input)
 
 low_bounds = ['a', 'z']
 up_bounds = ['A', 'Z']
@@ -25,24 +23,27 @@ diff = ord('Z') - ord('A') + 1;
 ord_low_bounds = [ord('a'), ord('z')]
 ord_up_bounds = [ord('A'), ord('Z')]
 
-for i in xrange(0, length):
-    c = input[i];
+while True:
+    input = sys.stdin.read(CHUNK_SIZE)
+    if len(input) == 0:
+        break
+    for c in input:
 
-    if c >= low_bounds[0] and c <= low_bounds[1]:
-        c = ord(input[i]) + N
-        if c > ord_low_bounds[1]:
-            c -= diff;
-        if c < ord_low_bounds[0]:
-            c += diff;
-        c = chr(c)
+        if c >= low_bounds[0] and c <= low_bounds[1]:
+            c = ord(c) + N
+            if c > ord_low_bounds[1]:
+                c -= diff;
+            if c < ord_low_bounds[0]:
+                c += diff;
+            c = chr(c)
 
-    if c >= up_bounds[0] and c <= up_bounds[1]:
-        c = ord(input[i]) + N;
-        if c > ord_up_bounds[1]:
-            c -= diff;
-        if c < ord_up_bounds[0]:
-            c += diff;
+        if c >= up_bounds[0] and c <= up_bounds[1]:
+            c = ord(c) + N;
+            if c > ord_up_bounds[1]:
+                c -= diff;
+            if c < ord_up_bounds[0]:
+                c += diff;
 
-        c = chr(c);
+            c = chr(c);
 
-    sys.stdout.write(c)
+        sys.stdout.write(c)
