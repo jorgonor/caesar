@@ -37,6 +37,9 @@ for($i = 0; $i < $length; $i++) {
         if ($c > $ord_low_bounds[1]) {
             $c -= $diff;
         }
+        if ($c < $ord_low_bounds[0]) {
+            $c += $diff;
+        }
         $c = chr($c);
     }
 
@@ -45,6 +48,10 @@ for($i = 0; $i < $length; $i++) {
         if ($c > $ord_up_bounds[1]) {
             $c -= $diff;
         }
+        if ($c < $ord_up_bounds[0]) {
+            $c += $diff;
+        }
+
         $c = chr($c);
     }
 
