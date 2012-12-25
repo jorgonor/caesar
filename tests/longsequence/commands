@@ -1,2 +1,4 @@
 php naive_caesar.php 3
 python naive_caesar.py 3
+php mem_caesar.php 3
+python mem_caesar.py 3
