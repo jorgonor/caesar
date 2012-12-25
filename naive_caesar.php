@@ -33,6 +33,7 @@ $fp = fopen('php://stdin', 'r');
 
 while ( $input = fread($fp, CHUNK_SIZE) ) {
     $i = 0;
+    $input = str_split($input);
     while (isset($input[$i])) {
         $c = $input[$i];
         if ($c >= $low_bounds[0] && $c <= $low_bounds[1])

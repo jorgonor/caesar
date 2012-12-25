@@ -1,32 +1,32 @@
 NAIVE PYTHON
 1th time
 
-real	0m16.045s
-user	0m15.981s
-sys	0m0.072s
+real	0m15.503s
+user	0m15.473s
+sys	0m0.044s
 2th time
 
-real	0m15.488s
-user	0m15.441s
-sys	0m0.060s
+real	0m15.507s
+user	0m15.457s
+sys	0m0.056s
 3th time
 
-real	0m15.650s
-user	0m15.633s
-sys	0m0.028s
+real	0m15.508s
+user	0m15.485s
+sys	0m0.036s
 NAIVE PHP
 1th time
 
-real	0m44.403s
-user	0m42.507s
-sys	0m1.864s
+real	0m43.973s
+user	0m42.371s
+sys	0m1.560s
 2th time
 
-real	0m45.942s
-user	0m44.171s
-sys	0m1.724s
+real	0m43.043s
+user	0m41.327s
+sys	0m1.692s
 3th time
 
-real	0m42.664s
-user	0m41.115s
-sys	0m1.516s
+real	0m42.889s
+user	0m41.307s
+sys	0m1.560s
