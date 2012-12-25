@@ -2,3 +2,4 @@ php naive_caesar.php 6
 python naive_caesar.py 6
 php mem_caesar.php 6
 python mem_caesar.py 6
+./bin/mem_caesar 6

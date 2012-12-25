@@ -2,3 +2,4 @@ php naive_caesar.php -5
 python naive_caesar.py -5
 php mem_caesar.php -5
 python mem_caesar.py -5
+./bin/mem_caesar -5

@@ -1,64 +1,80 @@
 NAIVE PYTHON
 1th time
 
-real	0m14.330s
-user	0m14.301s
-sys	0m0.040s
+real	0m14.394s
+user	0m14.353s
+sys	0m0.052s
 2th time
 
-real	0m14.252s
-user	0m14.225s
-sys	0m0.036s
+real	0m14.239s
+user	0m14.241s
+sys	0m0.012s
 3th time
 
-real	0m14.295s
-user	0m14.269s
-sys	0m0.040s
+real	0m14.314s
+user	0m14.273s
+sys	0m0.052s
 NAIVE PHP
 1th time
 
-real	0m41.481s
-user	0m41.391s
-sys	0m0.056s
+real	0m39.990s
+user	0m39.898s
+sys	0m0.072s
 2th time
 
-real	0m40.869s
-user	0m40.795s
-sys	0m0.048s
+real	0m40.807s
+user	0m40.751s
+sys	0m0.036s
 3th time
 
-real	0m42.521s
-user	0m42.439s
-sys	0m0.064s
+real	0m39.385s
+user	0m39.334s
+sys	0m0.036s
 MEM PHP
 1th time
 
-real	0m11.402s
-user	0m11.373s
-sys	0m0.032s
+real	0m11.322s
+user	0m11.289s
+sys	0m0.040s
 2th time
 
-real	0m11.253s
-user	0m11.217s
-sys	0m0.040s
+real	0m11.193s
+user	0m11.169s
+sys	0m0.028s
 3th time
 
-real	0m11.443s
-user	0m11.417s
-sys	0m0.032s
+real	0m11.507s
+user	0m11.457s
+sys	0m0.052s
 MEM PYTHON
 1th time
 
-real	0m5.898s
-user	0m5.884s
-sys	0m0.032s
+real	0m6.073s
+user	0m6.044s
+sys	0m0.044s
 2th time
 
-real	0m5.975s
-user	0m5.948s
-sys	0m0.044s
+real	0m6.058s
+user	0m6.020s
+sys	0m0.040s
 3th time
 
-real	0m5.908s
-user	0m5.888s
-sys	0m0.036s
+real	0m6.001s
+user	0m5.984s
+sys	0m0.032s
+MEM C
+1th time
+
+real	0m0.106s
+user	0m0.104s
+sys	0m0.008s
+2th time
+
+real	0m0.106s
+user	0m0.104s
+sys	0m0.008s
+3th time
+
+real	0m0.120s
+user	0m0.120s
+sys	0m0.004s

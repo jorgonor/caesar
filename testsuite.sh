@@ -1,5 +1,7 @@
 #!/bin/bash
 
+./before_testsuite.sh
+
 tests=$(ls tests)
 tests_counter=0
 
