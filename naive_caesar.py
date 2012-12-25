@@ -27,8 +27,8 @@ while True:
     input = sys.stdin.read(CHUNK_SIZE)
     if len(input) == 0:
         break
+    buffer = []
     for c in input:
-
         if c >= low_bounds[0] and c <= low_bounds[1]:
             c = ord(c) + N
             if c > ord_low_bounds[1]:
@@ -46,4 +46,5 @@ while True:
 
             c = chr(c);
 
-        sys.stdout.write(c)
+        buffer.append(c)
+    sys.stdout.write("".join(buffer))

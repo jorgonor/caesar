@@ -30,8 +30,8 @@ $ord_low_bounds = array(ord('a'), ord('z'));
 $ord_up_bounds = array(ord('A'), ord('Z'));
 
 $fp = fopen('php://stdin', 'r');
-
 while ( $input = fread($fp, CHUNK_SIZE) ) {
+    $buffer = array();
     foreach(str_split($input) as $c) {
         $ord_c = ord($c);
         if ($ord_c >= $ord_low_bounds[0] && $ord_c <= $ord_low_bounds[1])
@@ -57,8 +57,9 @@ while ( $input = fread($fp, CHUNK_SIZE) ) {
 
             $c = chr($x);
         }
-        echo $c;
+        $buffer[] = $c;
     }
+    echo implode('', $buffer);
 }
 
 fclose($fp);
