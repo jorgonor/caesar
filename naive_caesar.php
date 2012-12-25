@@ -32,13 +32,10 @@ $ord_up_bounds = array(ord('A'), ord('Z'));
 $fp = fopen('php://stdin', 'r');
 
 while ( $input = fread($fp, CHUNK_SIZE) ) {
-    $i = 0;
-    $input = str_split($input);
-    while (isset($input[$i])) {
-        $c = $input[$i];
+    foreach(str_split($input) as $c) {
         if ($c >= $low_bounds[0] && $c <= $low_bounds[1])
         {
-            $c = ord($input[$i]) + $N;
+            $c = ord($c) + $N;
             if ($c > $ord_low_bounds[1]) {
                 $c -= $diff;
             }
@@ -49,7 +46,7 @@ while ( $input = fread($fp, CHUNK_SIZE) ) {
         }
 
         if ($c >= $up_bounds[0] && $c <= $up_bounds[1]) {
-            $c = ord($input[$i]) + $N;
+            $c = ord($c) + $N;
             if ($c > $ord_up_bounds[1]) {
                 $c -= $diff;
             }
@@ -59,7 +56,6 @@ while ( $input = fread($fp, CHUNK_SIZE) ) {
 
             $c = chr($c);
         }
-        $i++;
         echo $c;
     }
 }
