@@ -28,22 +28,22 @@ while True:
     if len(input) == 0:
         break
     for c in input:
-        ord_c = ord(c)
-        if ord_c >= ord_low_bounds[0] and ord_c <= ord_low_bounds[1]:
-            x = ord_c + N
-            if x > ord_low_bounds[1]:
-                x -= diff;
-            if x < ord_low_bounds[0]:
-                x += diff;
-            c = chr(x)
 
-        if ord_c >= ord_up_bounds[0] and ord_c <= ord_up_bounds[1]:
-            x = ord_c + N;
-            if x > ord_up_bounds[1]:
-                x -= diff;
-            if x < ord_up_bounds[0]:
-                x += diff;
+        if c >= low_bounds[0] and c <= low_bounds[1]:
+            c = ord(c) + N
+            if c > ord_low_bounds[1]:
+                c -= diff;
+            if c < ord_low_bounds[0]:
+                c += diff;
+            c = chr(c)
 
-            c = chr(x);
+        if c >= up_bounds[0] and c <= up_bounds[1]:
+            c = ord(c) + N;
+            if c > ord_up_bounds[1]:
+                c -= diff;
+            if c < ord_up_bounds[0]:
+                c += diff;
+
+            c = chr(c);
 
         sys.stdout.write(c)
