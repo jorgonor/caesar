@@ -19,6 +19,8 @@ if (!is_numeric($N)) {
     error_die("$N should be numeric");
 }
 
+$N = intval($N);
+
 $input = file_get_contents('php://stdin');
 $length = strlen($input);
 
